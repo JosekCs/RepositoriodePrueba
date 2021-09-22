@@ -51,7 +51,8 @@ public class Clase {
 		media = (float)suma/(float)contEdad;
 		
 		mensaje="El mas joven se llama "+nombreMenor+" y la media de la edad es "+ media;
-		System.out.println(mensaje+"Adios");
+		System.out.println(mensaje);
+		System.out.println("Fin del programa");
 	}
 	
 
