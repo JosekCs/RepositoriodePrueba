@@ -5,6 +5,12 @@ import java.sql.DriverManager;
 
 public class BaseDatos 
 {
+	
+	// Campos
+	// ======
+	public Connection conexion;
+	private String cadenaConexion;
+	
 	// Constructores
 	// =============
 	public BaseDatos(String servidor, String usuario, String password, String baseDatos) 
@@ -13,11 +19,7 @@ public class BaseDatos
 						   + "?user=" + usuario + "&password=" + password 
 						   + "&autoReconnect=true";
 	}
-	
-	// Campos
-	// ======
-	private Connection conexion;
-	private String cadenaConexion;
+
 	
 	// Métodos
 	// =======
